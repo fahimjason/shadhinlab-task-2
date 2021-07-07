@@ -23,26 +23,6 @@
     }
 }
 
-@media all and (max-width:943px) {
-    .about-main {
-        flex-direction: column;
-    }
-    .female-img{
-        order: 1;
-    }
-    .male-img{
-        display: none;
-    }
-    .about-main-content-text {
-        padding: 0;
-        text-align: center;
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 @media all and (max-width: 971px) {
     .skill-details {
         padding: 3rem 0;
@@ -62,6 +42,38 @@
     }
     .skill-text p {
         padding: 0;
+    }
+}
+
+@media all and (max-width: 951px) {
+    .make-web-content {
+        flex-direction: column;
+    }
+    .make-web-text{
+        width: auto !important;
+    }
+    .mobile-img {
+        width: auto;
+    }
+}
+
+@media all and (max-width:943px) {
+    .about-main {
+        flex-direction: column;
+    }
+    .female-img{
+        order: 1;
+    }
+    .male-img{
+        display: none;
+    }
+    .about-main-content-text {
+        padding: 0;
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
     }
 }
 
