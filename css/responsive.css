@@ -96,6 +96,9 @@
         width: 10.5rem;
         height: 7.5rem;
     }
+    .contact-section .section-info p {
+        display: none;
+    }
 }
 
 @media all and (max-width: 778px) {
@@ -163,6 +166,15 @@
     .video-section-main {
         flex-direction: column;
         text-align: center;
+    }
+    .video-container {
+        width: 100%;
+    }
+    .video-container iframe {
+        float: none;
+        padding-right: 0;
+        padding: 0rem;
+        width: 100%;
     }
     .video-section p {
         width: auto;

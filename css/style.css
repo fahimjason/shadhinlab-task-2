@@ -15,6 +15,7 @@ h2{
 .special-color{
     color: #fee500;
 }
+
 .btn-started{
     background-color: #fff;
     color: #fee500;
@@ -24,6 +25,20 @@ h2{
     font-weight: 700;
     cursor: pointer;
 }
+.white-button{
+    background-color: #fff;
+    color: #000;
+}
+
+.section-info{
+    text-align: center;
+} 
+.section-info p{
+    word-wrap: break-word;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .three-dots{
     padding: 1.5em;
 }
@@ -144,14 +159,6 @@ nav ul li a:hover {
 .services{
     padding: 3rem 0;
 }
-.services-info{
-    text-align: center;
-} 
-.services-info p{
-    word-wrap: break-word;
-    width: 50%;
-    margin: 0 auto;
-}
 .service-cards{
     display: flex;
     justify-content: center;
@@ -214,7 +221,6 @@ nav ul li a:hover {
     height: 3em;
     padding: 1.5em 0;
     margin-top: -.8em;
-    /* position: absolute */
 }
 .make-web-content{
     width: 70%;
@@ -268,14 +274,6 @@ nav ul li a:hover {
     padding: 2rem 0 3rem 0;
     text-align: center;
 }
-.portfolio-info{
-    text-align: center;
-} 
-.portfolio-info p{
-    word-wrap: break-word;
-    width: 50%;
-    margin: 0 auto;
-}
 .portfolio-gallery{
     justify-content: center;
 }
@@ -328,9 +326,6 @@ nav ul li a:hover {
 .show-more{
     background-color: #fee500;
     color: #fff;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    border: 0;
 }
 
 
@@ -368,16 +363,6 @@ nav ul li a:hover {
     color: #fff;
     word-wrap: break-word;
     padding: .2rem 0;
-}
-.video-section button{
-    background-color: #fff;
-    color: #000;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    border: 0;
-    margin: .5rem 0;
-    cursor: pointer;
 }
 
 
@@ -417,13 +402,7 @@ nav ul li a:hover {
 .about-section{
    padding: 3rem 0;
 }
-.about-info{
-    text-align: center;
-} 
-.about-info p{
-    word-wrap: break-word;
-    width: 50%;
-    margin: 0 auto;
+.about-section .section-info p{
     padding-bottom: 2rem;
 }
 .about-main{
@@ -506,14 +485,7 @@ nav ul li a:hover {
 .blog-section{
     padding: 0 0 2rem 0;
 }
-.blog-info{
-    text-align: center;
-    margin-top: 2rem;
-} 
-.blog-info p{
-    word-wrap: break-word;
-    width: 50%;
-    margin: 0 auto;
+.blog-section .section-info p{
     margin-bottom: 1rem;
 }
 .blog-cards-part{
@@ -591,16 +563,6 @@ nav ul li a:hover {
     color: #000;
     outline: none !important;
 }
-.subscribe-button button{
-    background-color: #fff;
-    color: #000;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    border: 0;
-    margin: 1em;
-    cursor: pointer;
-}
 
 
 /* Contact Section CSS */
@@ -623,14 +585,10 @@ nav ul li a:hover {
     background-color: rgba(50, 71, 82, .9);
     z-index: -2;
 }
-.contact-info{
-    text-align: center;
+.contact-section .section-info{
     margin-top: 2rem;
 } 
-.contact-info p{
-    word-wrap: break-word;
-    width: 50%;
-    margin: 0 auto;
+.contact-section .section-info p{
     margin-bottom: 1rem;
 }
 
@@ -666,16 +624,6 @@ nav ul li a:hover {
 .contact-form input:focus,textarea:focus{
     outline: none !important;
     border: 1px solid #728189;
-}
-.contact-form button{
-    background-color: #fff;
-    color: #000;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    border: 0;
-    margin-top: 1em;
-    cursor: pointer;
 }
 
 /* Footer CSS */
