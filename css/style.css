@@ -4,11 +4,11 @@
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
 }
 h2{
-    font-size: 1.8rem;
+    font-size: 28px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,6 +28,7 @@ h2{
 .white-button{
     background-color: #fff;
     color: #000;
+    cursor: pointer;
 }
 
 .section-info{
@@ -75,62 +76,103 @@ h2{
     justify-content: flex-start;
 }
 .social-icon{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
     background-color: #f1f1f1;
-    margin: 1rem;
+    margin: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Navbar CSS */
+.nav-main{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
 nav{
-    padding: 0 5rem;
+    padding: 0;
     background-color: #fff;
+    box-shadow: 0 4px 2px -2px gray;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-nav ul{
+.nav-logo{
+    display: none;
+}
+.nav-icon {
+    display: none;
+}
+nav .menu ul{
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     display: flex;
+    align-items: center;
 }
-nav ul li{
+nav .menu ul li{
     text-align: center;
     flex: auto;
-    padding: 1rem 0;
+    padding: 16px;
 
 }
-nav ul li a{
+nav .menu ul li a{
     text-decoration: none;
     color: #324752;
-    padding: 1rem;
 
 }
-
-.active-nav{
+nav .menu ul .active-nav{
     color: #fee500;
     font-size: 150%;
 }
-nav ul li a:hover {
-    font-weight: 700;
+nav .menu ul li a:hover {
     color: #fee500;
 }
 
 
 /* Header CSS */
 .header-main{
-    background-image: url('../images/beautiful-macbook-pro.jpg');
+    display: none;
+    background-image: url('../images/hexagon-main.png');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 600px;
     position: relative;
     color: #fff;
+    margin-top: 62px;
 }
+
+#slide-1 {
+    background-image: url(../images/beautiful-macbook-pro.jpg);
+}
+#slide-2 {
+    background-image: url(../images/lamps-bulbs.jpg);
+}
+#slide-3 {
+    background-image: url(../images/lamps.jpg);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 .header-overlay{
     position: absolute;
     background-color: rgba(50, 71, 82, .7);
@@ -139,25 +181,38 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
 }
+/* .header-content */
 .header-info{
-    margin-top: 15%;
     text-align: center;
+    padding-top: 180px;
 }
 .header-info p{
     word-wrap: break-word;
     width: 50%;
     margin: 0 auto;
-    padding: .5rem 0;
+    padding: 8px 0;
 }
-.dots{
-    font-size: 4rem;
-    padding-top: 0;
+.dots {
+    padding-top: 32px;
 }
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-active, .dot:hover {
+    background-color: #fee500;
+  }
 
 
 /* Services Section CSS */
 .services{
-    padding: 3rem 0;
+    padding: 48px 0 0 0;
 }
 .service-cards{
     display: flex;
@@ -166,20 +221,20 @@ nav ul li a:hover {
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 16px;
 }
 .service-cards .card{
-    margin: .5rem;
-    padding-bottom: .5rem;
+    margin: 8px;
+    padding-bottom: 8px;
     position: relative;
 }
 .service-cards .card::before{
     content: '';
     position: absolute;
-    top: 3.2em;
-    left: -5em;
-    width: 8em;
-    height: .2em;
+    top: 55px;
+    left: -86px;
+    width: 155px;
+    height: 4px;
     background: #fee500;
     z-index: -1;
   }
@@ -316,9 +371,13 @@ nav ul li a:hover {
     width: 50%;
     margin: 0 auto;
 }
-.portfolio .images .image{
-    padding: .5rem;
+.portfolio .images .image {
+    padding: 8px;
+    display: none;
 }
+.portfolio .images .show {
+    display: block;
+  }
 .portfolio .images .image img{
     width: 100%;
     height: auto;
@@ -326,13 +385,14 @@ nav ul li a:hover {
 .show-more{
     background-color: #fee500;
     color: #fff;
+    margin-top: 20px;
 }
 
 
 /* Video Section CSS */
 .video-section{
     background-color: #fee500;
-    padding: 3rem 0;
+    padding: 48px 0;
 }
 .video-section-main{
     display: flex;
@@ -341,13 +401,12 @@ nav ul li a:hover {
 }
 .video-container{
     width: 50%;
-    padding: 2rem 0;
+    padding: 32px 0;
 
 }
 .video-container iframe{
     float: right;
-    padding-right: 2rem;
-    /* padding: 2rem; */
+    padding-right: 32px;
     width: 70%;
     height: 315px;
 }
@@ -356,7 +415,7 @@ nav ul li a:hover {
 
 }
 .video-section h4{
-    padding: 1rem 0;
+    padding: 16px 0;
 }
 .video-section p{
     width: 70%;
@@ -498,7 +557,7 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
 }
-.special-card{
+.blog-card.special-card{
     max-width: 45.5%;
     margin: .5em;
     border: 1px solid #728189;
@@ -528,9 +587,15 @@ nav ul li a:hover {
     word-wrap: break-word;
     text-align: justify;
 }
+.blog-card-text .more{
+    display: none;
+}
 .blog-card-footer{
     float: right;
     padding: .5rem .5rem;
+}
+.blog-card-footer h4{
+    cursor: pointer;;
 }
 
 
@@ -574,7 +639,7 @@ nav ul li a:hover {
     color: #fff;
     width: 100%;
     height: 600px;
-    z-index: -3;
+    /* z-index: -3; */
 }
 .contact-overlay{
     top:0;
@@ -583,7 +648,7 @@ nav ul li a:hover {
     height: 100%;
     position: absolute;
     background-color: rgba(50, 71, 82, .9);
-    z-index: -2;
+    /* z-index: -1; */
 }
 .contact-section .section-info{
     margin-top: 2rem;
@@ -592,14 +657,14 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-.contact-info .three-dots{
+.contact-section .section-info .three-dots{
     padding: 1.5em;
 }
-.contact-info .three-dots li {
+.contact-section .section-info .three-dots li {
     background: #324752;
   }
   
-.contact-info .three-dots li::before{
+  .contact-section .section-info .three-dots li::before{
     z-index: -1;
   }
 .contact-form{
@@ -619,11 +684,11 @@ nav ul li a:hover {
     height: 9.5rem;
 }
 .contact-form input::placeholder, textarea::placeholder{
-    color: #728189;
+    color: #fff;
 }
 .contact-form input:focus,textarea:focus{
     outline: none !important;
-    border: 1px solid #728189;
+    border: 1px solid #fff;
 }
 
 /* Footer CSS */

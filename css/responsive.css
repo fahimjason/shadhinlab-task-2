@@ -1,4 +1,4 @@
-@media all and (max-width: 1165px) {
+/* @media all and (max-width: 1165px) {
     .input-contact-info {
         width: 22.5rem;
     }
@@ -8,41 +8,12 @@
     }
 }
 @media all and (max-width: 1007px) {
-    .about-main-content-text {
-        padding: 0 1rem;
-    }
 }
 
 @media all and (max-width: 992px) {
-    .service-cards .card::before {
-        top: 2.2em;
-    }
-    .card-content-icon-img i {
-        top: 38%;
-        left: 45%;
-    }
 }
 
 @media all and (max-width: 971px) {
-    .skill-details {
-        padding: 3rem 0;
-    }
-    .skill-details-content {
-        width: 100%;
-        margin: 0 auto;
-        flex-direction: column;
-    }
-    .skill-items {
-        margin: 0 auto;
-    }
-    .skill-content {
-        width: 55%;
-        margin: 0 auto;
-        padding-top: 2.5rem;
-    }
-    .skill-text p {
-        padding: 0;
-    }
 }
 
 @media all and (max-width: 951px) {
@@ -58,6 +29,333 @@
 }
 
 @media all and (max-width:943px) {
+    
+}
+
+@media all and (max-width: 774px) {
+    
+}
+
+@media all and (max-width: 778px) {
+}
+
+@media all and (max-width: 696px) {
+}
+@media all and (max-width: 580px) {
+
+    .make-web-text h2 {
+        padding-bottom: .5em;
+    }
+    .make-web-text p {
+        padding-bottom: 1em;
+    }
+}
+
+@media all and (max-width: 388px) {
+}
+
+@media all and (max-width: 367px) {
+}
+
+@media all and (max-width: 347px) {
+} */
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .contact-form {
+        width: 100%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1094px) and (max-width: 1280px) {
+
+    .service-cards .card::before {
+        top: 20%;
+    }
+    
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .header-info {
+        padding-top: 165px;
+    }
+
+
+    .card-content-icon-img i {
+        top: 39%;
+        left: 47%;
+        font-size: smaller;
+    }
+
+    .service-cards .card::before {
+        top: 50px;
+        left: -60px;
+        width: 105px;
+        height: 4px;
+    }
+
+
+    .contact-form {
+        width: 100%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, iPads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .header-info {
+        padding-top: 150px;
+    }
+   
+    .make-web-content {
+        flex-direction: column;
+    }
+    .make-web-text{
+        width: auto !important;
+    }
+    .mobile-img {
+        width: auto;
+    }
+
+
+    .show-more {
+        margin-top: 20px;
+    }
+    
+
+    .about-main-content {
+        width: 65%;
+    }
+    .female-img {
+        display: none;
+    }
+
+
+    .skill-details {
+        padding: 24px 0;
+    }
+    .skill-details-content {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .skill-items {
+        margin: 0 auto;
+    }
+    .skill-content {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .skill-text p {
+        padding: 0;
+    }
+
+
+    .contact-form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+  }
+
+  
+  /* 
+    ##Device = Tablets, iPads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .header-info {
+        padding-top: 150px;
+    }
+
+    .card-content-icon-img i {
+        top: 34%;
+        left: 44%;
+        font-size: smaller;
+    }
+
+    .service-cards .card::before {
+        top: 10%;
+        left: -42%;
+        width: 70%;
+        height: 1.2%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  @media (min-width: 854px) and (max-width: 1024px){
+    .card-content-icon-img i {
+        top: 35%;
+        left: 46%;
+    }
+
+    .service-cards .card::before {
+        top: 38px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* Nav */
+    .section-info p {
+        width: auto;
+        padding: 0 10%;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding: 2% 10%;
+    }
+    .nav-logo {
+        display: block;
+    }
+    nav .menu ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #fff;
+    }
+    nav .menu ul li {
+        padding: 10px;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: block;
+    }
+    nav .nav-icon {
+        display: block;
+        padding: 10px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    nav .nav-icon :hover {
+        color: #fee500
+    }
+
+    
+    .header-info {
+        padding-top: 150px;
+    }
+    .header-info p {
+        width: auto;
+        padding: 8px 10%;
+    }
+
+
+    /* Service Section*/
+    .card-content-icon-img i {
+        top: 35%;
+        left: 43%;
+        font-size: smaller;
+    }
+
+    .service-cards .card::before {
+        top: 21px;
+        left: -46px;
+        width: 72px;
+        height: 3px;
+    }
+
+
+    .make-web-content {
+        flex-direction: column;
+    }
+    .make-web-text{
+        width: auto !important;
+    }
+    .mobile-img {
+        width: auto;
+    }
+
+    .make-web-text h2 {
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
+    .make-web-text p {
+        padding-bottom: 16px;
+    }
+
+
+
+    .portfolio-gallery-btn {
+        padding: 8px 0;
+    }
+    .portfolio-gallery-btn ul li {
+        margin: 0 8px;
+    }
+    .show-more {
+        margin-top: 16px;
+    }
+
+
+    /* Video Section */
+    .video-section {
+        padding-top: 0;
+    }
+    .video-section-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-container {
+        width: 100%;
+        padding: 0;
+    }
+    .video-container iframe {
+        float: none;
+        padding-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .video-section-info {
+        padding-top: 32px;
+        width: 100%;
+    }
+    .video-section p {
+        width: 80%;
+        margin: auto;
+    }
+    .video-section-info button {
+        margin-top: 15px;
+    }
+
+
+    .subscribe-main h2{
+        font-size: 16px;
+    }
+
+
+    /* About Section */
     .about-main {
         flex-direction: column;
     }
@@ -75,158 +373,296 @@
         display: flex;
         justify-content: center;
     }
-}
 
-@media all and (max-width: 774px) {
-    .special-card {
-        max-width: 90%;
+    /* Skill Section */
+    .skill-details {
+        padding: 24px 0;
     }
-    .blog-card {
-        max-width: 42.3%;
+    .skill-details-content {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
     }
-
-    .contact-info p {
-        word-wrap: break-word;
-        display: none;
+    .skill-items {
+        margin: 0 auto;
     }
-    .input-contact-info {
-        width: auto;
+    .skill-content {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 40px;
     }
-    .contact-form textarea {
-        width: 10.5rem;
-        height: 7.5rem;
-    }
-    .contact-section .section-info p {
-        display: none;
-    }
-}
-
-@media all and (max-width: 778px) {
-    .card-content-icon-img i {
-        top: 30%;
-        left: 43.5%;
-    }
-    .service-cards .card::before {
-        top: 1.7em;
-        left: -3em;
-        width: 4.8em;
-        height: .2em;
-    }
-}
-
-@media all and (max-width: 696px) {
-    .subscribe-main h2{
-        font-size: 1.5rem
-    }
-}
-@media all and (max-width: 580px) {
-    nav{
-        padding: 0 2rem;
-        justify-content: center;
-    }
-    nav ul{
-        text-align: center;
-    }
-    nav ul li {
-        padding: .5rem;
-    }
-    nav ul li a{
+    .skill-text p {
         padding: 0;
     }
 
-    .header-info {
-        margin-top: 21%;
+
+    /* Blog Section */
+    .blog-card {
+        max-width: 90%;
+    }
+    .blog-card.special-card {
+        max-width: 90%;
     }
 
-    .card-content-icon-img i {
-        top: 29%;
-        left: 41.5%;
-    }
-    .service-cards .card::before {
-        top: 1.2em;
-        left: -3em;
-        width: 4.3em;
-        height: .2em;
-    }
 
-    .make-web-text h2 {
-        padding-bottom: .5em;
-    }
-    .make-web-text p {
-        padding-bottom: 1em;
-    }
-
-    .portfolio-gallery-btn {
-        padding: .5rem 0;
-    }
-    .portfolio-gallery-btn ul li {
-        margin: 0 .5rem;
-    }
-
-    .video-section-main {
-        flex-direction: column;
-        text-align: center;
-    }
-    .video-container {
+    /* Contact Section */
+    .contact-form {
         width: 100%;
     }
-    .video-container iframe {
-        float: none;
-        padding-right: 0;
-        padding: 0rem;
-        width: 100%;
+    .input-contact-info{
+        width: 365px;
     }
-    .video-section p {
-        width: auto;
+    .contact-form textarea {
+        width: 365px;
+        height: 85px;
     }
-    .subscribe-main h2{
-        font-size: 1rem
-    }
-}
 
-@media all and (max-width: 388px) {
-    nav ul {
-        flex-direction: column;
+    /* Footer Section */
+    footer {
+        padding: 40px 0;
     }
-    .portfolio-gallery-btn ul {
-        flex-wrap: wrap;
-    }
-    .portfolio-gallery-btn ul li button {
-        margin: .5rem 0;
-    }
-}
-
-@media all and (max-width: 367px) {
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
     .subscribe-process{
         flex-direction: column;
     }
     .subscribe-input input{
-        margin: .5em;
+        margin: 8px;
     }
     .subscribe-input input{
-        margin: .5em;
+        margin: 8px;
     }
-}
+    
+  }
 
-@media all and (max-width: 347px) {
+  @media all and (max-width: 480px){
+    .section-info p {
+        width: auto;
+        padding: 0 10%;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding: 2% 10%;
+    }
+    .nav-logo {
+        display: block;
+    }
+    nav .menu ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #fff;
+    }
+    nav .menu ul li {
+        padding: 10px;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: block;
+    }
+    nav .nav-icon {
+        display: block;
+        padding: 10px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    nav .nav-icon :hover {
+        color: #fee500
+    }
+
+    .header-main {
+        height: 500px;
+        margin-top: 60px;
+    }
+
+    .header-info {
+        padding-top: 110px;
+    }
+
+    .header-info p {
+        width: auto;
+        padding: 8px 10%;
+    }
+    .dots {
+        font-size: 24px;
+    }
+
     .service-cards {
         flex-direction: column;
     }
     .card-content-icon-img i {
-        top: 42%;
-        left: 46.5%;
+        top: 42.5%;
+        left: 47.5%;
     }
     .service-cards .card::before {
-        top: -1.5em;
-        left: 5.9em;
-        width: .2em;
-        height: 9.3em;
+        top: -7%;
+        left: 49%;
+        width: 1.5%;
+        height: 60%;
     }
     .service-cards .card:first-child::before {
-            top: 6.5em;
-            left: 5.9em;
-            width: .2em;
-            height: 1.3em;
-            display: block;
-        }
-}
+        top: 43%;
+        left: 49%;
+        width: 1.5%;
+        height: 10%;
+        display: block;
+    }
+
+
+    .make-web-content {
+        flex-direction: column;
+    }
+    .make-web-text{
+        width: auto !important;
+    }
+    .mobile-img {
+        width: auto;
+    }
+
+
+    .portfolio-gallery-btn {
+        padding: 16px;
+    }
+    .portfolio-gallery-btn ul {
+        flex-wrap: wrap;
+        width: 80%
+    }
+    .portfolio-gallery-btn ul li{
+        padding: 0 10px;
+        flex: none;
+    }
+    .portfolio .images {
+        width: 85%;
+    }
+    .show-more {
+        margin-top: 16px;
+    }
+
+    .video-section {
+        padding-top: 0;
+    }
+    .video-section-main{
+        flex-direction: column;
+    }
+    .video-container {
+        width: 100%;
+        padding: 0;
+    }
+    .video-container iframe {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
+    .video-section-info {
+        text-align: center;
+        padding-top: 32px;
+        width: 100%;
+    }
+    .video-section p {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .video-section-info button {
+        margin-top: 15px;
+    }
+
+
+    /* About section */
+    .about-main {
+        flex-direction: column;
+    }
+    .female-img{
+        order: 1;
+    }
+    .male-img{
+        display: none;
+    }
+    .about-main-content-text {
+        padding: 0;
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* Skill Section */
+    .skill-details {
+        padding: 24px 0;
+    }
+    .skill-details-content {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .skill-items {
+        margin: 0 auto;
+    }
+    .skill-content {
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .skill-text p {
+        padding: 0;
+    }
+
+
+    /* Blog Section */
+    .blog-card {
+        max-width: 90%;
+    }
+    .blog-card.special-card {
+        max-width: 90%;
+    }
+
+
+    /* Subscribe */
+    .subscribe-main h2 {
+        font-size: 20px;
+    }
+
+
+    /* Contact Section */
+    .contact-form {
+        width: 100%;
+    }
+    .contact-form input {
+        width: 340px;
+    }
+    .contact-form textarea {
+        width: 340px;
+        height: 120px;
+    }
+    .contact-section .section-info p {
+        display: none;
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 40px 0;
+    }
+  }
+
+  @media (min-width: 402px) and (max-width: 480px){
+    .service-cards .card::before {
+        height: 70%;
+    }
+    .service-cards .card:first-child::before {
+        height: 20%;
+    }
+  }
